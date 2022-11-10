@@ -11,16 +11,11 @@ class Main extends LitElement{
             <main class="main">
                 <article>
                     <h2 class="main__title">Mis tarjetas</h2>
-                    
-                        <gft-container></gft-container>
-                        
-                  
+                    <gft-container></gft-container>
                     <a class="button" href="/tarjetas.html">¡Quiero mi tarjeta!</a>
                 </article>
-        
-        </main>
-    <!-- <link rel="stylesheet" href="./components/main/main.css"> -->
-        
+            </main>
+        <link rel="stylesheet" href="./components/main/main.css">
         `
     }
 }

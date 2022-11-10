@@ -1,4 +1,30 @@
- .main__target--add a{
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main__targets{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    min-height: 100px;
+}
+
+.main__target{
+    color: var(--color-cloud);
+    width: 320px;
+    height: 158px;
+    border-radius: 16px;
+    font-size: 16px;
+    margin: 10px 10px;
+    padding: 10px 20px;
+}
+
+.main__target--add a{
     text-decoration: none;
     color: var(--color-carbon);
     font-size: 50px;
@@ -17,12 +43,33 @@
 }
 
 
-
-
 @media (min-width: 320px) and (max-width:960px)
 {
-    .main__targets .main__target--add{
+    .main__target--add{
         display: none;
     }
 
+    .main__targets{
+        position: relative;
+        width: 100%;
+        min-height: 280px;
+    }
+
+    gft-card:nth-child(1){
+        /* background-color: red; */
+        position: absolute;
+        top: 0px;
+    }
+
+    gft-card:nth-child(2){
+        /* background-color: rgb(0, 0, 0); */
+        position: absolute;
+        top: 50px;
+    }
+
+    gft-card:nth-child(3){
+        /* background-color: rgb(207, 207, 207); */
+        z-index: 100;
+        margin-top: 100px;
+    }
 }
