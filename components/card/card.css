@@ -1,0 +1,233 @@
+     /* Targets */
+    /*     section{
+        width: 390px;
+        height: 192px; 
+        background: linear-gradient(101.17deg, #160F41 13.18%, #01030D 87.97%);
+    }
+     */
+      *{
+        box-sizing: border-box;
+        border: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    :root{
+        --color-sea: #1255E1;
+        --color-carbon: #4C4C4C;
+        --color-cloud: #FFFFFF;
+        --color-primary-brand: #213E7F;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color-cloud);
+       
+    }
+  
+    
+    /* **************** */
+    .main__targets{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        min-height: 100px;
+    }
+    
+    .main__target{
+        color: var(--color-cloud);
+        width: 320px;
+        height: 158px;
+        border-radius: 16px;
+        font-size: 16px;
+        margin: 10px 10px;
+        padding: 10px 20px;
+    }
+    
+    .main__target div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .main__target .target-p1,
+    .main__target .target-p2,
+    .main__target .target-p3{
+        display: flex;
+        align-self: flex-start;
+    }
+    
+    .main__target .target-p1 h2,
+    .main__target .target-p3 h2{
+        justify-content: space-around;
+    }
+    
+    .main__target img{
+        align-self: flex-end;
+    }
+    
+    .main__target .target-p1 h2{
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .main__target .target-p1 p{
+        font-family: 'Inter';
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .main__target .target-p2{
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .main__target .target-p3 h2{
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .main__target .target-p3 p{
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .main__target .target-p3 p small{
+        font-family: 'Inter';
+        font-size: 10px;
+        font-weight: 400;
+    }
+    
+    .main__target--premium{
+        background: blue;
+        background: linear-gradient(101.17deg, #1255E1 13.18%, #213E7F 87.96%);
+    }
+    
+    .main__target--oro{
+        background: #997C15;
+        background: linear-gradient(101.17deg, #E9C444 13.18%, #997C15 87.96%);
+    }
+    
+    .main__target--black{
+        background: #01030D;
+        background: linear-gradient(101.17deg, #160F41 13.18%, #01030D 87.96%);
+    }
+    
+    .main__target--add a{
+        text-decoration: none;
+        color: var(--color-carbon);
+        font-size: 50px;
+    }
+    
+    
+   
+    @media (min-width: 320px) and (max-width:960px)
+{
+    
+
+    section{
+        padding: 0;
+        margin-left: 20%;
+        height: 50vh;
+        box-shadow: none;
+        background-color: #f7f7f7;
+    }
+
+
+    article{
+        box-shadow: none;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+  
+     /* Targets */
+    /* negra */
+    .main__target{
+        width: 300px;
+        height: 158px;
+    }
+
+    .main__target--premium .target-p1 h2{
+        font-size: 12px;
+    }
+
+    .main__target--premium .target-p1 p{
+        font-size: 10px;
+    }
+
+    .main__target--oro .target-p1 h2{
+        font-size: 14px;
+    }
+
+    .main__target--oro .target-p1 p{
+        font-size: 12px;
+    }
+
+    .main__target--black .target-p1 h2{
+        font-size: 16px;
+    }
+
+    .main__target--black .target-p1 p{
+        font-size: 14px;
+    }
+
+    .main__target:nth-child(2){
+        width: 285px;
+        height: 158px;
+    }
+    /* azul */
+    .main__target:nth-child(1){
+        width: 270px;
+        height: 158px;
+    }
+    /* oro */
+    .main__target:nth-child(2){
+        width: 285px;
+        height: 158px;
+    }
+
+
+    .main .main__targets{
+        position: relative;
+        width: 100%;
+        min-height: 280px;
+    }
+
+    .main__targets .main__target--premium{
+        position: absolute;
+        top: 0px;
+        z-index: 1;
+    }
+
+    .main__targets .main__target--oro{
+        position: absolute;
+        top: 50px;
+        z-index: 2;
+    }
+
+    .main__targets .main__target--black{
+        position: absolute;
+        top: 100px;
+        z-index: 3;
+    }
+
+    .main__targets .main__target--add{
+        display: none;
+    }
+
+}
+
+    

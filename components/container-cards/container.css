@@ -1,0 +1,28 @@
+ .main__target--add a{
+    text-decoration: none;
+    color: var(--color-carbon);
+    font-size: 50px;
+}
+
+.main__target--add h2{
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main__target--add{
+    border: 4px solid #7F7F7F;
+    color: var(--color-carbon);
+    background: #EDEDED;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width:960px)
+{
+    .main__targets .main__target--add{
+        display: none;
+    }
+
+}
