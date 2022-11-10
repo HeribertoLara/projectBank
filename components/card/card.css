@@ -120,4 +120,16 @@
     .main__target--black .target-p1 p{
         font-size: 14px;
     }
+
+    .main__target--premium{
+        width: 270px;
+    }
+
+    .main__target--oro{
+        width: 320px;
+    }
+
+    .main__target--black{
+        width: 290px;
+    }
 }
